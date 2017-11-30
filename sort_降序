@@ -1,0 +1,15 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+bool compare(int a, int b)
+{
+	return a > b;
+}
+void main()
+{
+	int m[5] = { 4,18,19,23,25 };
+	sort(m,m+5,compare);
+	for (auto &i : m)
+		cout << i << '\t';
+	getchar();
+}
